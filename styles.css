@@ -249,6 +249,7 @@ footer {
   background-color: var(--neutral-900);
   color: white;
   border-radius: var(--radius-075);
+  padding-inline: var(--spacing-300);
 }
 footer button {
   padding-inline: var(--spacing-300);
@@ -323,4 +324,22 @@ article:hover {
   transform: translateY(-4px); /* Lift up 4px */
   border-color: var(--neutral-900);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft depth shadow */
+}
+
+footer a.review {
+  margin-block-start: var(--spacing-400);
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  color: inherit;
+  gap: var(--spacing-300);
+  padding-inline: var(--spacing-300) var(--spacing-250);
+  padding-block: var(--spacing-200);
+  border-radius: var(--radius-050);
+  border-color: var(--neutral-900);
+  border-width: 2px;
+  border: var(--neutral-100) var(--spacing-050) solid;
+}
+footer a.review img {
+  fill: var(--neutral-100);
 }
