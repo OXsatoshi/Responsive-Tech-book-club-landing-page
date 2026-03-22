@@ -1,0 +1,122 @@
+@media (min-width: 1024px) {
+  main {
+    max-width: 1200px;
+    margin-inline: auto; /* Centers the whole website */
+  }
+  section,
+  header {
+    padding-inline: var(--spacing-2000);
+  }
+  main section:nth-of-type(1) {
+    display: flex;
+    gap: var(--spacing-800);
+  }
+  main section:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-800);
+  }
+  main section:nth-of-type(2) div:nth-child(1) {
+    order: 1;
+  }
+  main section:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-800);
+  }
+  main section:nth-of-type(4) ol {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-800);
+  }
+
+  main section:nth-of-type(4) ol li div.square {
+    position: relative;
+  }
+  main section:nth-of-type(4) ol li div.square::after {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(100%, -20%);
+
+    width: 250%;
+    height: 250%;
+
+    background-image: url("./assets/images/pattern-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  main section:nth-of-type(4) ol li:last-child div.square::after {
+    display: none;
+  }
+  main section:nth-of-type(5) div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: var(--spacing-300);
+  }
+  main section:nth-of-type(5) div article:nth-of-type(1) {
+    grid-column: 1/2;
+  }
+  main section:nth-of-type(5) div article:nth-of-type(2) {
+    grid-column: 2/4;
+  }
+  main section:nth-of-type(5) div article:nth-of-type(3) {
+    grid-column: 4/5;
+    grid-row: 1;
+  }
+
+  main section:nth-of-type(5) div article {
+    padding-inline: var(--spacing-200);
+  }
+
+  main section:nth-of-type(5) div article ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+  }
+
+  main section:nth-of-type(5) div article ul img {
+    margin-inline-end: var(--spacing-200);
+  }
+
+  main section:nth-of-type(5) div article button {
+    display: block;
+    margin-inline: auto;
+    margin-block-end: var(--spacing-200);
+  }
+
+  main section:nth-of-type(5) div article:nth-of-type(2) button {
+    width: 70%;
+  }
+  main section:nth-of-type(5) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-200);
+  }
+  img {
+    border-radius: var(--radius-075);
+  }
+  article img,
+  section:nth-of-type(2) img {
+    border-radius: 0;
+  }
+  section:nth-of-type(2) img.presentation {
+    border-radius: var(--radius-075);
+  }
+  main section article {
+    border: var(--neutral-200) 2px solid;
+    border-radius: var(--radius-075);
+  }
+  footer {
+    text-align: center;
+  }
+  footer .testamony {
+    display: flex;
+    justify-content: center;
+  }
+}
