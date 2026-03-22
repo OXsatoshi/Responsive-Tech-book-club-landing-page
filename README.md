@@ -2,6 +2,10 @@
 
 A modern, responsive landing page built with a **Mobile-First** approach. This project serves as a technical demonstration of translating complex Figma design systems into performant, accessible, and maintainable CSS architecture.
 
+## Live Demo
+
+[View the live project here](https://oxsatoshi.github.io/Responsive-Tech-book-club-landing-page/)
+
 ## Project Overview
 
 The objective was to engineer a pixel-perfect landing page that maintains a "physical notebook" aesthetic while ensuring 60fps performance and full accessibility.
